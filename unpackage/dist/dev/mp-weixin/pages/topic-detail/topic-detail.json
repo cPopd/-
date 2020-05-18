@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "topic-detail": "/components/topic/topic-detail"
+  }
+}
