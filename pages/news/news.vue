@@ -120,7 +120,7 @@ export default {
 				list: [
 					// 文字
 					{
-						userpic: '../../static/demo6.jpg',
+						userpic: '../../static/demo7.jpg',
 						username: '哈哈',
 						sex: 1, //0 男 1 女
 						age: 25,
@@ -136,7 +136,7 @@ export default {
 					},
 					// 图文
 					{
-						userpic: '../../static/demo6.jpg',
+						userpic: '../../static/demo7.jpg',
 						username: '哈哈',
 						sex: 0, //0 男 1 女
 						age: 25,
@@ -152,7 +152,7 @@ export default {
 					},
 					// 视频
 					{
-						userpic: '../../static/demo6.jpg',
+						userpic: '../../static/demo7.jpg',
 						username: '哈哈',
 						sex: 0, //0 男 1 女
 						age: 25,
@@ -171,7 +171,7 @@ export default {
 					},
 					// 分享
 					{
-						userpic: '../../static/demo6.jpg',
+						userpic: '../../static/demo7.jpg',
 						username: '哈哈',
 						sex: 0, //0 男 1 女
 						age: 25,
@@ -211,7 +211,7 @@ export default {
 			//获取数据
 			setTimeout(()=>{
 				let obj ={
-						userpic: '../../static/demo6.jpg',
+						userpic: '../../static/demo7.jpg',
 						username: '哈哈',
 						sex: 0, //0 男 1 女
 						age: 25,

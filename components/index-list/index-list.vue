@@ -7,7 +7,7 @@
 					<image lazy-load :src="item.userpic" mode="widthFix"></image>
 					{{item.username}}
 				</view>
-				<view class="index-list1-2" v-if="!isguanzhu" @tap="guanzhu(item)">
+				<view class="index-list1-2" v-if="!isguanzhu" @tap="guanzhu">
 					<view class="icon iconfont icon-zengjia"></view>
 					<view>关注</view>
 				</view>
@@ -15,7 +15,7 @@
 			<!-- 标题栏 -->
 			<view class="index-list2" @tap="opentetail">{{item.title}}</view>
 			<!-- 主要图文 -->
-			<view class="index-list3 u-f-ajc" @tap="dongtai(index)" :class="{'animated pulse' : c1 == index}">
+			<view class="index-list3 u-f-ajc" @tap="dongtai(index)" :class="{'animated pulse' : c1}">
 				<image lazy-load :src="item.titlepic" mode="widthFix" @tap="opentetail"></image>
 				<!-- 视频 -->
 				<view class="incn iconfont icon-bofang index-list3-1" v-if="item.type=='video'"></view>
@@ -55,7 +55,7 @@
 			return {
 				 isguanzhu : this.item.isguanzhu,
 				 infonum: this.item.infonum,
-				 c1:-1
+				 c1:false
 			}
 		},
 		methods: {
@@ -93,8 +93,8 @@
 				}
 			},
 			//关注事件
-			guanzhu(e){
-				e.isguanzhu = !e.isguanzhu
+			guanzhu(){
+				this.isguanzhu = true
 				uni.showToast({
 					title:'关注成功',
 					icon:'success'
@@ -105,8 +105,7 @@
 				
 			},
 			dongtai(e){
-				this.c1 = 10
-				this.c1 = e
+				this.c1 = !this.c1
 			}
 		},
 		props:{

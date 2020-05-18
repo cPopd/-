@@ -1,11 +1,11 @@
 <template>
 	<view>
 		<view class="uni-tab-bar">
-			<scroll-view scroll-x class="uni-swiper-tab">
+			<scroll-view scroll-x class="uni-swiper-tab" :style="scrollStrle">
 				<block v-for="(tab,i) in tabBars" :key="i">
 					<view class="swiper-tab-list"
 					 :class="{'active animated pulse' : tabIndex == i}"
-					 @tap="tabtap(i)"
+					 @tap="tabtap(i)" :style="scrollItemStrle"
 					 >
 						{{tab.name}}
 					</view>
@@ -29,7 +29,15 @@
 		},
 		props:{
 			tabBars:Array,
-			tabIndex:Number
+			tabIndex:Number,
+			scrollStrle:{
+				type:String,
+				default:""
+			},
+			scrollItemStrle:{
+				type:String,
+				default:""
+			}
 		}
 	}
 </script>
