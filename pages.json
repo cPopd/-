@@ -45,7 +45,32 @@
         }
         ,{
             "path" : "pages/paper/paper",
-            "style" : {}
+            "style" : {
+							"navigationBarTitleText":"小纸条",
+							"enablePullDownRefresh":true,
+							"app-plus":{
+								"titleNView":{
+									"buttons":[
+										{
+											"color":"#000000",
+											"colorPressed":"#BBBBBB",
+											"float":"left",
+											"fontSize":"22px",
+											"fontSrc":"/static/font/icon.ttf",
+											"text":"\ue845"
+										},
+										{
+											"color":"#000000",
+											"colorPressed":"#BBBBBB",
+											"float":"right",
+											"fontSize":"22px",
+											"fontSrc":"/static/font/icon.ttf",
+											"text":"\ue684"
+										}
+									]
+								}
+							}
+						}
         }
         ,{
             "path" : "pages/home/home",
@@ -116,6 +141,7 @@
         ,{
             "path" : "pages/topic-detail/topic-detail",
             "style" : {
+							"enablePullDownRefresh":true,
 							"app-plus":{
 								"scrollIndicator":"none",//隐藏滚动条
 								"titleNView":{
@@ -131,6 +157,18 @@
         }
         ,{
             "path" : "components/topic/topic-detail",
+            "style" : {}
+        }
+        ,{
+            "path" : "components/uni-badge/uni-badge",
+            "style" : {}
+        }
+        ,{
+            "path" : "components/papers/papers-list",
+            "style" : {}
+        }
+        ,{
+            "path" : "components/papers/paper-left-popup",
             "style" : {}
         }
     ],

@@ -9,13 +9,13 @@
 				</view>
 				<view class="index-list1-2" v-if="!isguanzhu" @tap="guanzhu">
 					<view class="icon iconfont icon-zengjia"></view>
-					<view>关注</view>
+					<view>关注</view>  
 				</view>
 			</view>
 			<!-- 标题栏 -->
 			<view class="index-list2" @tap="opentetail">{{item.title}}</view>
 			<!-- 主要图文 -->
-			<view class="index-list3 u-f-ajc" @tap="dongtai(index)" :class="{'animated pulse' : c1}">
+			<view class="index-list3 u-f-ajc" hover-class="animated pulse" hover-stay-time="800">
 				<image lazy-load :src="item.titlepic" mode="widthFix" @tap="opentetail"></image>
 				<!-- 视频 -->
 				<view class="incn iconfont icon-bofang index-list3-1" v-if="item.type=='video'"></view>

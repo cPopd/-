@@ -1,11 +1,12 @@
 <template>
 	<view>
+		
 		<view class="topic-new animated fadeInLeft fast" @tap="gopage">
 			<view class="new">最近更新</view>
 				<block v-for="(item,index) in list" :key="index">
 					<view class="list u-f animated fadeInLeft fast">
 					<image :src="item.titlepic"
-					mode="widthFix" lazy-load></image>
+					mode="widthFix" lazy-load hover-class="animated pulse" hover-stay-time="800"></image>
 					<view>
 						<view>#{{item.title}}#</view>
 						<view>{{item.desc}}</view>
@@ -30,7 +31,7 @@
 					url:'../../pages/topic-detail/topic-detail'
 				})
 			}
-		},
+		}, 
 		props:{
 			list:Array
 		}

@@ -203,6 +203,44 @@
 			}
 		},
 		methods: {
+			//上拉刷新
+			getdata(){
+				//获取数据
+				let arr = [{
+						userpic: '../../static/demo7.jpg',
+						username: '下拉刷新测试',
+						sex: 1, //0 男 1 女
+						age: 25,
+						isguanzhu: false,
+						title: '我是标题',
+						titlepic: '',
+						video: false,
+						share: false,
+						path: '深圳 龙岗',
+						sharenum: 20,
+						commentnum: 30,
+						goodnum: 20
+				},
+				{
+						userpic: '../../static/demo7.jpg',
+						username: '下拉刷新测试',
+						sex: 0, //0 男 1 女
+						age: 25,
+						isguanzhu: false,
+						title: '我是标题',
+						titlepic: '',
+						video: false,
+						share: false,
+						path: '深圳 龙岗',
+						sharenum: 20,
+						commentnum: 30,
+						goodnum: 20
+				},]
+				//赋值
+				this.tablist[this.tabIndex].list=arr;
+				//关闭下拉刷新
+				uni.stopPullDownRefresh()
+			},
 			tabtap(e){
 				this.tabIndex = e
 			},
@@ -240,8 +278,16 @@
 			commonList,
 			loadmore
 		},
+		/* 页面触底 */
 		onReachBottom(){
 			this.loadmore();
+		},
+		/* 下拉刷新 */
+		onPullDownRefresh() {
+			setTimeout(()=>{
+				this.getdata()
+			},1000)
+			
 		}
 	}
 </script>
