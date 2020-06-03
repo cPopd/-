@@ -145,7 +145,14 @@ var _default =
 
   props: {
     tabBars: Array,
-    tabIndex: Number } };exports.default = _default;
+    tabIndex: Number,
+    scrollStrle: {
+      type: String,
+      default: "" },
+
+    scrollItemStrle: {
+      type: String,
+      default: "" } } };exports.default = _default;
 
 /***/ }),
 
@@ -178,7 +185,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ 66:
+/***/ 89:
 /*!*************************************************************************!*\
   !*** E:/网页/臭事百科/main.js?{"page":"components%2Findex-list%2Fswipe-tab"} ***!
   \*************************************************************************/
@@ -194,5 +201,5 @@ createPage(_swipeTab.default);
 
 /***/ })
 
-},[[66,"common/runtime","common/vendor"]]]);
+},[[89,"common/runtime","common/vendor"]]]);
 //# sourceMappingURL=../../../.sourcemap/mp-weixin/components/index-list/swipe-tab.js.map

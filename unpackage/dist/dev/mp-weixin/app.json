@@ -12,7 +12,11 @@
     "components/new-tab/top-list",
     "pages/topic-nav/topic-nav",
     "pages/topic-detail/topic-detail",
-    "components/topic/topic-detail"
+    "components/topic/topic-detail",
+    "components/uni-badge/uni-badge",
+    "components/papers/papers-list",
+    "components/papers/paper-left-popup",
+    "pages/user-list/user-list"
   ],
   "subPackages": [],
   "window": {
@@ -53,6 +57,5 @@
       }
     ]
   },
-  "usingComponents": {},
-  "sitemapLocation": "sitemap51.json"
+  "usingComponents": {}
 }

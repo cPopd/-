@@ -171,7 +171,7 @@ var _default =
     return {
       isguanzhu: this.item.isguanzhu,
       infonum: this.item.infonum,
-      c1: -1 };
+      c1: false };
 
   },
   methods: {
@@ -209,8 +209,8 @@ var _default =
       }
     },
     //关注事件
-    guanzhu: function guanzhu(e) {
-      e.isguanzhu = !e.isguanzhu;
+    guanzhu: function guanzhu() {
+      this.isguanzhu = true;
       uni.showToast({
         title: '关注成功',
         icon: 'success' });
@@ -221,8 +221,7 @@ var _default =
 
     },
     dongtai: function dongtai(e) {
-      this.c1 = 10;
-      this.c1 = e;
+      this.c1 = !this.c1;
     } },
 
   props: {
@@ -261,7 +260,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ 65:
+/***/ 88:
 /*!**************************************************************************!*\
   !*** E:/网页/臭事百科/main.js?{"page":"components%2Findex-list%2Findex-list"} ***!
   \**************************************************************************/
@@ -277,5 +276,5 @@ createPage(_indexList.default);
 
 /***/ })
 
-},[[65,"common/runtime","common/vendor"]]]);
+},[[88,"common/runtime","common/vendor"]]]);
 //# sourceMappingURL=../../../.sourcemap/mp-weixin/components/index-list/index-list.js.map

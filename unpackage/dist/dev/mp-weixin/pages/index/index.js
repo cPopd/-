@@ -207,7 +207,7 @@ var _swipeTab = _interopRequireDefault(__webpack_require__(/*! ../../components/
 //
 //
 //
-var loadmore = function loadmore() {__webpack_require__.e(/*! require.ensure | components/common/load-more */ "components/common/load-more").then((function () {return resolve(__webpack_require__(/*! ../../components/common/load-more.vue */ 103));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var nothing = function nothing() {__webpack_require__.e(/*! require.ensure | components/common/no-thing */ "components/common/no-thing").then((function () {return resolve(__webpack_require__(/*! ../../components/common/no-thing.vue */ 110));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default = { data: function data() {return { swhegiht: 500, tabBars: [{ name: "关注", id: "0" }, { name: "热点", id: "1" }, { name: "娱乐", id: "2" }, { name: "财经", id: "3" }, { name: "游戏", id: "4" }, { name: "体育", id: "5" }, { name: "新闻", id: "6" }], newList: { list: [{ loadtext: "上拉加载更多", list: [{ userpic: '../../static/userpic/12.jpg', username: '二狗不叫二狗', isguanzhu: true, title: '我是标题', type: 'img', titlepic: '../../static/datapic/11.jpg', infonum: { dingnum: 11, cainum: 11, index: 1 //0代表没被操作 1定了 2 踩了
+var loadmore = function loadmore() {__webpack_require__.e(/*! require.ensure | components/common/load-more */ "components/common/load-more").then((function () {return resolve(__webpack_require__(/*! ../../components/common/load-more.vue */ 137));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var nothing = function nothing() {__webpack_require__.e(/*! require.ensure | components/common/no-thing */ "components/common/no-thing").then((function () {return resolve(__webpack_require__(/*! ../../components/common/no-thing.vue */ 144));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default = { data: function data() {return { swhegiht: 500, tabBars: [{ name: "关注", id: "0" }, { name: "热点", id: "1" }, { name: "娱乐", id: "2" }, { name: "财经", id: "3" }, { name: "游戏", id: "4" }, { name: "体育", id: "5" }, { name: "新闻", id: "6" }], newList: { list: [{ loadtext: "上拉加载更多", list: [{ userpic: '../../static/userpic/12.jpg', username: '二狗不叫二狗', isguanzhu: true, title: '我是标题', type: 'img', titlepic: '../../static/datapic/11.jpg', infonum: { dingnum: 11, cainum: 11, index: 1 //0代表没被操作 1定了 2 踩了
             }, commentnum: 10, sharenum: 10 }, { userpic: '../../static/userpic/12.jpg', username: '二狗不叫二狗',
             isguanzhu: false,
             title: '我是标题',
@@ -647,7 +647,7 @@ var _default =
     return {
       isguanzhu: this.item.isguanzhu,
       infonum: this.item.infonum,
-      c1: -1 };
+      c1: false };
 
   },
   methods: {
@@ -685,8 +685,8 @@ var _default =
       }
     },
     //关注事件
-    guanzhu: function guanzhu(e) {
-      e.isguanzhu = !e.isguanzhu;
+    guanzhu: function guanzhu() {
+      this.isguanzhu = true;
       uni.showToast({
         title: '关注成功',
         icon: 'success' });
@@ -697,8 +697,7 @@ var _default =
 
     },
     dongtai: function dongtai(e) {
-      this.c1 = 10;
-      this.c1 = e;
+      this.c1 = !this.c1;
     } },
 
   props: {
@@ -875,7 +874,14 @@ var _default =
 
   props: {
     tabBars: Array,
-    tabIndex: Number } };exports.default = _default;
+    tabIndex: Number,
+    scrollStrle: {
+      type: String,
+      default: "" },
+
+    scrollItemStrle: {
+      type: String,
+      default: "" } } };exports.default = _default;
 
 /***/ }),
 /* 29 */

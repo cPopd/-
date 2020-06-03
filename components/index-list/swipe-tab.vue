@@ -7,7 +7,7 @@
 					 :class="{'active animated pulse' : tabIndex == i}"
 					 @tap="tabtap(i)" :style="scrollItemStrle"
 					 >
-						{{tab.name}}
+						{{tab.name}} {{tab.num?tab.num:''}}
 					</view>
 				</block>
 			</scroll-view>

@@ -171,6 +171,36 @@
             "path" : "components/papers/paper-left-popup",
             "style" : {}
         }
+        
+        ,{
+            "path" : "pages/user-list/user-list",
+            "style" : {
+            	"app-plus":{
+								"animationType":"slide-in-left",
+            		"scrollIndicator":"none",
+            		"titleNView":{
+									"autoBackButton":false,
+            			"searchInput":{
+            				"align":"center",
+            				"autoFocus":false,
+            				"borderRadius":"8rpx",
+            				"placeholder":"搜索",
+            				"placeholderColor":"#CCCCCC",
+            				"disabled":false,
+            				"backgroundColor":"#F7F7F7"
+            			},
+            			"buttons":[
+            			{
+            				"color":"#000000",
+            				"colorPressed":"#BBBBBB",
+            				"float":"right",
+            				"fontSize":"32rpx",
+            				"text":"取消"
+            			}]
+            		}    
+            	}
+            }
+        }
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",

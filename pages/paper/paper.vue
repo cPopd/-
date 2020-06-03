@@ -178,6 +178,11 @@
 			if(e.index == 1){
 				this.show=true
 			}
+			if(e.index == 0){
+				uni.navigateTo({
+					url:'../user-list/user-list'
+				})
+			}
 		}
 	}
 </script>

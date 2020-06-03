@@ -1,5 +1,21 @@
 (global["webpackJsonp"] = global["webpackJsonp"] || []).push([["components/new-tab/top-list"],{
 
+/***/ 105:
+/*!*********************************************************************!*\
+  !*** E:/网页/臭事百科/main.js?{"page":"components%2Fnew-tab%2Ftop-list"} ***!
+  \*********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(createPage) {__webpack_require__(/*! uni-pages */ 4);
+var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ 2));
+var _topList = _interopRequireDefault(__webpack_require__(/*! ./components/new-tab/top-list.vue */ 44));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+createPage(_topList.default);
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["createPage"]))
+
+/***/ }),
+
 /***/ 44:
 /*!**************************************************!*\
   !*** E:/网页/臭事百科/components/new-tab/top-list.vue ***!
@@ -133,6 +149,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 var _default =
 {
   data: function data() {
@@ -180,23 +197,7 @@ __webpack_require__.r(__webpack_exports__);
     if(false) { var cssReload; }
   
 
-/***/ }),
-
-/***/ 82:
-/*!*********************************************************************!*\
-  !*** E:/网页/臭事百科/main.js?{"page":"components%2Fnew-tab%2Ftop-list"} ***!
-  \*********************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function(createPage) {__webpack_require__(/*! uni-pages */ 4);
-var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ 2));
-var _topList = _interopRequireDefault(__webpack_require__(/*! ./components/new-tab/top-list.vue */ 44));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
-createPage(_topList.default);
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["createPage"]))
-
 /***/ })
 
-},[[82,"common/runtime","common/vendor"]]]);
+},[[105,"common/runtime","common/vendor"]]]);
 //# sourceMappingURL=../../../.sourcemap/mp-weixin/components/new-tab/top-list.js.map

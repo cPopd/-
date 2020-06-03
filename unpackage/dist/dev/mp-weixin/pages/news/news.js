@@ -174,7 +174,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var _topNav = _interopRequireDefault(__webpack_require__(/*! ../../components/new-tab/top-nav */ 37));
-var _topList = _interopRequireDefault(__webpack_require__(/*! ../../components/new-tab/top-list */ 44));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}var commonList = function commonList() {__webpack_require__.e(/*! require.ensure | components/common/common-list */ "components/common/common-list").then((function () {return resolve(__webpack_require__(/*! ../../components/common/common-list.vue */ 117));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var newsNavBar = function newsNavBar() {__webpack_require__.e(/*! require.ensure | components/new-tab/news-nav-bar */ "components/new-tab/news-nav-bar").then((function () {return resolve(__webpack_require__(/*! ../../components/new-tab/news-nav-bar.vue */ 124));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var loadmore = function loadmore() {__webpack_require__.e(/*! require.ensure | components/common/load-more */ "components/common/load-more").then((function () {return resolve(__webpack_require__(/*! ../../components/common/load-more.vue */ 103));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
+var _topList = _interopRequireDefault(__webpack_require__(/*! ../../components/new-tab/top-list */ 44));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}var commonList = function commonList() {__webpack_require__.e(/*! require.ensure | components/common/common-list */ "components/common/common-list").then((function () {return resolve(__webpack_require__(/*! ../../components/common/common-list.vue */ 151));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var newsNavBar = function newsNavBar() {__webpack_require__.e(/*! require.ensure | components/new-tab/news-nav-bar */ "components/new-tab/news-nav-bar").then((function () {return resolve(__webpack_require__(/*! ../../components/new-tab/news-nav-bar.vue */ 158));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var loadmore = function loadmore() {__webpack_require__.e(/*! require.ensure | components/common/load-more */ "components/common/load-more").then((function () {return resolve(__webpack_require__(/*! ../../components/common/load-more.vue */ 137));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
 {
   data: function data() {
     return {
@@ -246,7 +246,7 @@ var _topList = _interopRequireDefault(__webpack_require__(/*! ../../components/n
         list: [
         // 文字
         {
-          userpic: '../../static/demo6.jpg',
+          userpic: '../../static/demo7.jpg',
           username: '哈哈',
           sex: 1, //0 男 1 女
           age: 25,
@@ -262,7 +262,7 @@ var _topList = _interopRequireDefault(__webpack_require__(/*! ../../components/n
 
         // 图文
         {
-          userpic: '../../static/demo6.jpg',
+          userpic: '../../static/demo7.jpg',
           username: '哈哈',
           sex: 0, //0 男 1 女
           age: 25,
@@ -278,7 +278,7 @@ var _topList = _interopRequireDefault(__webpack_require__(/*! ../../components/n
 
         // 视频
         {
-          userpic: '../../static/demo6.jpg',
+          userpic: '../../static/demo7.jpg',
           username: '哈哈',
           sex: 0, //0 男 1 女
           age: 25,
@@ -297,7 +297,7 @@ var _topList = _interopRequireDefault(__webpack_require__(/*! ../../components/n
 
         // 分享
         {
-          userpic: '../../static/demo6.jpg',
+          userpic: '../../static/demo7.jpg',
           username: '哈哈',
           sex: 0, //0 男 1 女
           age: 25,
@@ -337,7 +337,7 @@ var _topList = _interopRequireDefault(__webpack_require__(/*! ../../components/n
       //获取数据
       setTimeout(function () {
         var obj = {
-          userpic: '../../static/demo6.jpg',
+          userpic: '../../static/demo7.jpg',
           username: '哈哈',
           sex: 0, //0 男 1 女
           age: 25,
@@ -660,6 +660,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0; //
+//
 //
 //
 //
